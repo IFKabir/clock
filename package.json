@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Minimal clock widget using Electron",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "start": "electron ."
   },
