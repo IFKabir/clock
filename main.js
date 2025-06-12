@@ -6,7 +6,7 @@ function createWindow() {
         width: 200,
         height: 100,
         frame: false,          // no window frame (optional)
-        transparent: false,
+        transparent: true,
         alwaysOnTop: false,    // set true if you want it above other windows
         webPreferences: {
             nodeIntegration: true,   // allow require() in renderer (not needed here but set if needed)
