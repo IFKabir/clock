@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "electron .",
-    "dev": "nodemon --exec electron ."
+    "dev": "nodemon --watch ./ --exec electron ."
+
   },
   "keywords": [],
   "author": "",
