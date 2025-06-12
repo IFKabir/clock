@@ -5,7 +5,8 @@ function createWindow() {
     const win = new BrowserWindow({
         width: 200,
         height: 100,
-        frame: false,          // no window frame (optional)
+        frame: false,     
+        fullscreen:false,     // no window frame (optional)
         transparent: true,
         alwaysOnTop: false,    // set true if you want it above other windows
         webPreferences: {
