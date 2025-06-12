@@ -1,29 +1,28 @@
 <!-- index.html (Renderer UI) -->
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Clock Widget</title>
     <style>
-        body {
-            margin: 0;
-            background: transparent;
-            color: #0f0;
-            font-family: sans-serif;
-            text-align: center;
-        }
+      body {
+        -webkit-app-region: drag;
+        margin: 0;
+        background: transparent;
+        color: #0f0;
+        font-family: sans-serif;
+        text-align: center;
+      }
 
-        #clock {
-            font-size: 2em;
-            padding-top: 20px;
-        }
+      #clock {
+        font-size: 2em;
+        padding-top: 20px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="clock">--:--:--</div>
     <script src="renderer.js"></script>
-</body>
-
+  </body>
 </html>
