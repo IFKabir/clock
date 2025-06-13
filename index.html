@@ -17,6 +17,49 @@
       #clock {
         font-size: 2em;
         padding-top: 20px;
+
+        /* Pride flag colors gradient */
+        background: linear-gradient(
+          100deg,
+     red,
+  orange,
+  yellow,
+  green,
+  blue,
+  violet
+        );
+
+        /* Make the background size larger than text to allow movement */
+        background-size: 200% 100%;
+
+        /* Clip the background to the text */
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        /* Make the text transparent to show the background */
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+
+        /* Animate the background position to move the rainbow from left to right */
+        animation: rainbow-move 1s linear infinite;
+      }
+
+      @keyframes rainbow-move {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 200% 0%;
+        }
+      }
+
+      @keyframes rainbow-move {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 200% 0%;
+        }
       }
     </style>
   </head>
