@@ -19,20 +19,26 @@ function createWindow() {
     //fixes phantombar on windows 
     //check https://github.com/electron/electron/issues/39959
     win.loadFile('index.html');
-               win.on("blur", () => {
-		win.setResizable(true);
-		const [w, h] = win.getSize();
-		win.setSize(w, h + 1);
-		win.setSize(w, h);
-		win.setResizable(false);
-	});
-	win.on("focus", () => {
-		win.setResizable(true);
-		const [w, h] = win.getSize();
-		win.setSize(w, h + 1);
-		win.setSize(w, h);
-		win.setResizable(false);
-	});
+     win.on("blur", () => {
+  setTimeout(() => {
+    win.setResizable(true);
+    const [w, h] = win.getSize();
+    win.setSize(w, h + 1);
+    win.setSize(w, h);
+    win.setResizable(false);
+  }, 5000); // 5 seconds delay
+});
+
+win.on("focus", () => {
+  setTimeout(() => {
+    win.setResizable(true);
+    const [w, h] = win.getSize();
+    win.setSize(w, h + 1);
+    win.setSize(w, h);
+    win.setResizable(false);
+  }, 5000); // 5 seconds delay
+});
+
 }
 
 app.whenReady().then(createWindow);
